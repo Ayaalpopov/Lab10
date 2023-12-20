@@ -1,12 +1,12 @@
 public class test {
     public static void main(String[] args) {
-        Cat cat = new Cat();
-        Dog doge = new Dog();
-        doge.run(300);
-        cat.run(100);
-        doge.swim(5);
-        cat.swim(5);
-        doge.jump(1);
-        cat.jump(2);
+        Cat cat = new Cat("Murka");
+        System.out.println("cat run " + cat.run(180));
+        System.out.println("cat jump " + cat.jump(1));
+        System.out.println("cat swim " + cat.swim(5));
+        Dog dog = new Dog("Bobik");
+        System.out.println("dog run " + dog.run(480));
+        System.out.println("dog jump " + dog.jump(0.4));
+        System.out.println("dog swim " + dog.swim(5));
     }
 }
